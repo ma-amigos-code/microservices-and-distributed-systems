@@ -14,3 +14,7 @@
 - [Online Spring Boot Banner Generator](https://devops.datenkollektiv.de/banner.txt/index.html)
 - [Java 14 Record Keyword](https://www.baeldung.com/java-record-keyword)
 - [Git commit for this section](https://github.com/amigoscode/microservices/commit/f92f2126ded6e5f432bbcff1bfe02ccdc23a3d98)
+
+## Microservice Communication via HTTP
+- Each microservice should have its own database. 
+- [Git commit for this section](https://github.com/amigoscode/microservices/commit/2d0d8c2c710f7c388c72e4e66a9f04748acc751d)
