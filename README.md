@@ -18,3 +18,7 @@
 ## Microservice Communication via HTTP
 - Each microservice should have its own database. 
 - [Git commit for this section](https://github.com/amigoscode/microservices/commit/2d0d8c2c710f7c388c72e4e66a9f04748acc751d)
+
+## Service Discovery with Eureka
+- Load balancer use a round-robin to assign a new request from the client
+- [Git commit for this section](https://github.com/amigoscode/microservices/commit/f380637d80b3ff5990d3465a50da4ab35e0684d7)
