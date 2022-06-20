@@ -22,3 +22,7 @@
 ## Service Discovery with Eureka
 - Load balancer use a round-robin to assign a new request from the client
 - [Git commit for this section](https://github.com/amigoscode/microservices/commit/f380637d80b3ff5990d3465a50da4ab35e0684d7)
+
+## Open Feign
+- [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/a17dc61ce08617ab75a05924f118fe5d217e799c)
