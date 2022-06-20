@@ -26,3 +26,6 @@
 ## Open Feign
 - [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/a17dc61ce08617ab75a05924f118fe5d217e799c)
+
+## Exercise 1
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/730f3303fc36620612580a356be2d9cbeda28783)
