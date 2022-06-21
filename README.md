@@ -6,7 +6,7 @@
 ## Bootstrap With Maven
 - https://maven.apache.org/guides/mini/guide-creating-archetypes.html
 - **Generate archetype command:** mvn archetype:generate -DgroupId=com.amigoscode -DartifactId=amigosservices -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
-- Check use for <dependencyManagement> tag (spring boot parent project).
+- Check use for **dependencyManagement** tag (spring boot parent project).
 
 ## Your First Microservice
 - [Microservices](https://spring.io/microservices)
@@ -45,3 +45,10 @@
 - [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
 - Use http://localhost:8083/api/v1/customer on postman to use the load-balancer instead direct request
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/6e7c7006b47710948c1bc588f41518b0a6a70008)
+
+## Message Queues
+- [RabbitMQ: AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+- [RabbitMQ](https://www.rabbitmq.com/)
+- [APACHE KAFKA](https://kafka.apache.org/)
+- [Amazon Simple Queue Service](https://aws.amazon.com/sqs/)
+- [When to use RabbitMQ over Kafka?](https://stackoverflow.com/questions/42151544/when-to-use-rabbitmq-over-kafka)
