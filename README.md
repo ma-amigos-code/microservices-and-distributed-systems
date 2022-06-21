@@ -36,3 +36,12 @@
 - [Zipkin](https://zipkin.io/)
 - **Docker command:** zipkin: image: openzipkin/zipkin container_name: zipkin ports: - "9411:9411"
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/e20ce91aa45d944d8b731b613e75022647d6326a)
+
+## Api Gateway With Spring Cloud Gateway
+- [GOOGLE Cloud Load Balancing](https://cloud.google.com/load-balancing)
+- [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/)
+- [NGINX HTTP Load Balancing](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
+- [What Is Load Balancing?](https://www.nginx.com/resources/glossary/load-balancing)
+- [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
+- Use http://localhost:8083/api/v1/customer on postman to use the load-balancer instead direct request
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/6e7c7006b47710948c1bc588f41518b0a6a70008)
