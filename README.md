@@ -29,3 +29,10 @@
 
 ## Exercise 1
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/730f3303fc36620612580a356be2d9cbeda28783)
+
+## Distributed Tracing
+- [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth)
+- [OpenTracing](https://opentracing.io/)
+- [Zipkin](https://zipkin.io/)
+- **Docker command:** zipkin: image: openzipkin/zipkin container_name: zipkin ports: - "9411:9411"
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/e20ce91aa45d944d8b731b613e75022647d6326a)
