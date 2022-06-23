@@ -12,3 +12,4 @@ gen
 /clients/target/
 /notification/target/
 /api-gateway/target/
+/amqp/target/

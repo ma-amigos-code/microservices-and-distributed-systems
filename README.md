@@ -52,3 +52,6 @@
 - [APACHE KAFKA](https://kafka.apache.org/)
 - [Amazon Simple Queue Service](https://aws.amazon.com/sqs/)
 - [When to use RabbitMQ over Kafka?](https://stackoverflow.com/questions/42151544/when-to-use-rabbitmq-over-kafka)
+
+## RabbitMQ
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/a1176e4e799fadb265631ddbf3076443b7b221ca)
