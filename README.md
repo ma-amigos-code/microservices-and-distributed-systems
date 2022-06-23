@@ -55,3 +55,10 @@
 
 ## RabbitMQ
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/a1176e4e799fadb265631ddbf3076443b7b221ca)
+
+## Packaging Microservices to Runnable Jar
+- [Welcome to Apache Maven](https://maven.apache.org/index.html)
+- [Apache Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/)
+- [Spring Boot Maven Plugin Documentation](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/)
+- [Introduction to the Build Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/60a9c39d8962f5cf3fa21d7f5ca84d4f9dcae442)
