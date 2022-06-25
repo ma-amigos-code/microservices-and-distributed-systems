@@ -62,3 +62,14 @@
 - [Spring Boot Maven Plugin Documentation](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/)
 - [Introduction to the Build Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/60a9c39d8962f5cf3fa21d7f5ca84d4f9dcae442)
+
+## Packaging Jars to Docker Images
+- [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/)
+- [Docker Hub](https://hub.docker.com/)
+- [Spring Boot Maven Plugin Documentation](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/)
+- [GoogleContainerTools/jib](https://github.com/GoogleContainerTools/jib)
+- [adoptopenjdk](https://hub.docker.com/_/adoptopenjdk)
+- [eclipse-temurin](https://hub.docker.com/_/eclipse-temurin/)
+- `mvn clean package -P build-docker-image`
+- [Spring Profiles](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.profiles)
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/7315fb413b3852599bcf9abd88657270a4bf60df)
