@@ -73,3 +73,58 @@
 - `mvn clean package -P build-docker-image`
 - [Spring Profiles](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.profiles)
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/7315fb413b3852599bcf9abd88657270a4bf60df)
+
+## Kubernetes AKA k8s
+- [Kubernetes](https://kubernetes.io/)
+- Clusters:
+  - Cluster is a set of nodes
+  - Node - Virtual Machine (VM) or Physical Machine
+- Kubernetes Cluster:
+  - **Master Node**: the brain of the cluster (decisions are made)
+  - **Worker Node**: heavy lifting works (running your application)
+  - Both communicate by kubernetes
+- [etcd](https://etcd.io/)
+- [containerd](https://containerd.io/)
+- [minikube](https://minikube.sigs.k8s.io/docs/)
+- [**kubectl**](https://kubernetes.io/docs/tasks/tools/#kubectl) (kubernetes command line tool) will allow us to interact with our cluster:
+  - Run commands gains our cluster
+    - Deploy
+    - Inspect
+    - Edit resources
+    - Debug
+    - View logs
+    - ETC
+- [Kubernetes Getting started](https://kubernetes.io/docs/setup/)
+- **POD**:
+  - is the smallest deployable unit in Kubernetes and not containers
+  - has its unique IP address
+  - is a collection of containers
+  - represents a running process
+  - share same network and volumes
+  - never create pods on its own. use controllers instead
+  - ephemeral and disposable
+- The truth about pods:
+  - Never deploy pods using **kind:Pod**
+  - Don't treat pods like pets
+  - They are ephemeral (lives for a very short time)
+  - Pods on its own don't self-heal
+- Deployments:
+  - Manages release of new application
+  - Zero downtime deployments
+  - Create _ReplicaSet_
+- Services:
+  - How do we access how app?
+  - Not using port-forward. **Only testing**
+- Service Discovery:
+  - Mechanism for application and microservices to locate each other on a network
+  - [What is DNS? | How DNS works](https://www.cloudflare.com/learning/dns/what-is-dns/)
+  - [CoreDNS: DNS and Service Discovery](https://coredns.io/)
+  - KubeProxy: 
+    - Network proxy that runs on each node. Implementing part of the Kubernetes **Service**.
+    - Maintains network rules to allow communication to **pods** from inside and outside the cluster.
+    - Implements a controller that watches the API server for new **Services** and **Endpoints**
+    - Creates Local **IPVS (IP Virtual Server)** rules that tell node to intercept traffic destines to the service **ClusterIP**
+- kubectl commands:
+  - kubectl run hello-world --image=amigoscode/kubernetes:hello-world --port=80
+  - kubectl port-forward pod/hello-world 8080:80
+  - kubectl delete pod hello-world
