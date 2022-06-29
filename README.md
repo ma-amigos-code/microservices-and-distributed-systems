@@ -124,7 +124,21 @@
     - Maintains network rules to allow communication to **pods** from inside and outside the cluster.
     - Implements a controller that watches the API server for new **Services** and **Endpoints**
     - Creates Local **IPVS (IP Virtual Server)** rules that tell node to intercept traffic destines to the service **ClusterIP**
+- minikube commands:
+  - **Start cluster:** minikube start --memory=4g
+  - minikube status
 - kubectl commands:
+  - kubectl get pods
   - kubectl run hello-world --image=amigoscode/kubernetes:hello-world --port=80
   - kubectl port-forward pod/hello-world 8080:80
   - kubectl delete pod hello-world
+
+## Deploying Postgres RabbitMQ and Zipkin to k8s
+- kubectl commands:
+  - Apply YMLs from **bootstrap/postgres** folder: kubectl apply -f bootstrap/postgres
+  - **Execute postgres-0 pod:** kubectl exec -it postgres-0 -- psql -U amigoscode
+  - kubectl get services
+- minikube commands:
+  - minikube service --url rabbitmq
+  - **To access services on the specified port:** minikube tunnel
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/f2e56b7a2e5749a149acdcbb16be088616bb9ca2)
