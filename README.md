@@ -73,6 +73,9 @@
 - `mvn clean package -P build-docker-image`
 - [Spring Profiles](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.profiles)
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/7315fb413b3852599bcf9abd88657270a4bf60df)
+- **To download from docker-hub using docker-compose.yml file:** docker compose pull
+- docker compose up -d
+- docker compose down
 
 ## Kubernetes AKA k8s
 - [Kubernetes](https://kubernetes.io/)
@@ -142,3 +145,12 @@
   - minikube service --url rabbitmq
   - **To access services on the specified port:** minikube tunnel
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/f2e56b7a2e5749a149acdcbb16be088616bb9ca2)
+
+## Refactoring Microservices for k8s
+- No need for API Gateway Anymore
+  - k8s offers a service type called LoadBalancer and this will provision a load balancer according to your cloud environment. I.e. AWS, GCP or Azure. It is best to use managed load balancer instead of managing and configure ours.
+- No need for Eureka (service discovery), k8s offers that for free.
+- **@FeignClient(value = "fraud")** won't work because we are not using Eureka client, then we need to specify the URL
+- We don't need to specify ports for PODS, we just need to specify the **service name**
+- Put **SPRING_PROFILES_ACTIVE=default** on Environment variables inside configurations on IntelliJ
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/9185c4a446640855c97bf733fe0a2f44a551018d)
