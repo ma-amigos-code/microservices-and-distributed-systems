@@ -162,3 +162,41 @@
 - `kubectl logs customer-74db9d484-pj5rp -f`
 - `kubectl scale --replicas=0 deployment customer`
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/bc06317c26e63aa66bc6e6406a1f413532ce5b7b)
+
+## Managed Kubernetes Cluster with Linode
+- Commands for this sections
+  - **Commands Used**  
+    export KUBECONFIG=~/amigoscode-kubeconfig.yml  
+
+    kubectl get nodes
+    kubectl get ns
+   
+    kubectl apply -f path
+    kubectl delete -f path  
+    
+    kubectl get po
+    kubectl get svc
+    kubectl get po -w  
+    
+    kubectl logs postgres-0  
+    
+    kubectl exec -it postgres-0 -- psql -U amigoscode    
+    
+    kubectl describe pod podName  
+    
+    kubectl logs podName
+    kubectl logs -f podName  
+    
+    kubectl exec -it postgres-0 -- psql -U linpostgres -h lin-4621-419-pgsql-primary.servers.linodedb.net
+    kubectl exec -it postgres-0 -- psql --help
+    kubectl exec -it postgres-0 -- psql -U linpostgres -h lin-4621-419-pgsql-primary.servers.linodedb.net
+    kubectl exec -it postgres-0 -- bash  
+    
+    psql -U host -U username -d database
+    \d
+    \dt
+    \c databaseName
+    create database dbName;
+    select * from tableName;
+- [linode](https://www.linode.com/)
+- $env:KUBECONFIG = "C:\Users\AAA.bluemix\plugins\container-service\clusters\customernameabc\kube-config-hou02-clusternameabc.yml"
