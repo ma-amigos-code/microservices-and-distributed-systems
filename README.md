@@ -75,6 +75,7 @@
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/7315fb413b3852599bcf9abd88657270a4bf60df)
 - **To download from docker-hub using docker-compose.yml file:** docker compose pull
 - docker compose up -d
+- docker logs <ImageName>
 - docker compose down
 
 ## Kubernetes AKA k8s
@@ -138,9 +139,9 @@
 
 ## Deploying Postgres RabbitMQ and Zipkin to k8s
 - kubectl commands:
-  - Apply YMLs from **bootstrap/postgres** folder: kubectl apply -f bootstrap/postgres
-  - **Execute postgres-0 pod:** kubectl exec -it postgres-0 -- psql -U amigoscode
-  - kubectl get services
+  - Apply YMLs from **bootstrap/postgres** folder: `kubectl apply -f bootstrap/postgres`
+  - **Execute postgres-0 pod:** `kubectl exec -it postgres-0 -- psql -U amigoscode`
+  - `kubectl get services`
 - minikube commands:
   - minikube service --url rabbitmq
   - **To access services on the specified port:** minikube tunnel
@@ -154,3 +155,10 @@
 - We don't need to specify ports for PODS, we just need to specify the **service name**
 - Put **SPRING_PROFILES_ACTIVE=default** on Environment variables inside configurations on IntelliJ
 - [Section End Git Commit](https://github.com/amigoscode/microservices/commit/9185c4a446640855c97bf733fe0a2f44a551018d)
+
+## Deploying Microservices to k8s
+- `kubectl apply -f minikube/services/customer`
+- `kubectl describe pod customer-74db9d484-pj5rp`
+- `kubectl logs customer-74db9d484-pj5rp -f`
+- `kubectl scale --replicas=0 deployment customer`
+- [Section End Git Commit](https://github.com/amigoscode/microservices/commit/bc06317c26e63aa66bc6e6406a1f413532ce5b7b)
