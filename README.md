@@ -200,3 +200,20 @@
     select * from tableName;
 - [linode](https://www.linode.com/)
 - $env:KUBECONFIG = "C:\Users\AAA.bluemix\plugins\container-service\clusters\customernameabc\kube-config-hou02-clusternameabc.yml"
+
+## Kafka
+- [Kafka Documentation](https://kafka.apache.org/documentation/)
+- [Kafka Quickstart](https://kafka.apache.org/documentation/#quickstart)
+- Extract .tar.gz, .tgz, or .gz tarballs using tar on Windows 11/10: `tar -xvzf C:\PATH\TO\FILE\FILE-NAME.tar.gz -C C:\PATH\TO\FOLDER\EXTRACTION`
+- [How to Install and Run Apache Kafka on Windows?](https://www.geeksforgeeks.org/how-to-install-and-run-apache-kafka-on-windows/)
+  - **Start Zookeeper:** `bin/zookeeper-server-start.sh config/zookeeper.properties` or `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties` for windows
+  - **Start Kafka:** `bin/kafka-server-start.sh config/server.properties` or `.\bin\windows\kafka-server-start.bat .\config\server.properties` for windows
+  - **READ THE EVENTS:** `bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092` or `.\bin\windows\kafka-console-consumer.bat --topic amigoscode --from-beginning --bootstrap-server localhost:9092` for windows
+  - **Delete topic:** .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --delete --topic amigoscode
+- [kafka-example](https://github.com/ma-amigos-code/kafka-example) or [kafka-amigoscode](https://github.com/ma-amigos-code/kafka-amigoscode) repository is related to microservices of this **amigosservices** project
+- **Topic**: is a collection of events
+- http://localhost:8080/api/v1/messages
+  {
+  "message": "Api With Kafka"
+  }
+- [Spring for Apache Kafka](https://spring.io/projects/spring-kafka)
