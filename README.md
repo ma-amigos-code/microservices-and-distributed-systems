@@ -217,3 +217,21 @@
   "message": "Api With Kafka"
   }
 - [Spring for Apache Kafka](https://spring.io/projects/spring-kafka)
+
+## Outro
+- Don't Use Spring Cloud Config Server
+  - https://kubernetes.io/docs/concepts/configuration/configmap/
+  - https://spring.io/projects/spring-cloud-config
+  - https://docs.spring.io/spring-cloud-kubernetes/docs/current/reference/html/#kubernetes-propertysource-implementations
+- Vault and Secrets Management
+  - https://www.vaultproject.io/
+  - https://spring.io/projects/spring-vault
+- Security
+  - https://docs.spring.io/spring-security/reference/reactive/oauth2/index.html
+- Deployment
+  - https://aws.amazon.com/ecr/
+  - https://aws.amazon.com/elasticloadbalancing/
+  - https://aws.amazon.com/rds/
+  - https://aws.amazon.com/amazon-mq/?amazon-mq.sort-by=item.additionalFields.postDateTime&amazon-mq.sort-order=desc
+  - https://aws.amazon.com/msk/
+  - https://aws.amazon.com/eks/
